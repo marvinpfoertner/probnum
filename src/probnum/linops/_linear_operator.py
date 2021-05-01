@@ -164,6 +164,10 @@ class LinearOperator:
         return 2
 
     @property
+    def size(self) -> int:
+        return self.__shape[0] * self.__shape[1]
+
+    @property
     def dtype(self) -> np.dtype:
         return self.__dtype
 
